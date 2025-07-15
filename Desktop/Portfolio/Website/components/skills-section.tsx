@@ -1,13 +1,14 @@
 "use client"
 
 import { useState } from "react"
+import type { ReactElement } from "react"
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card"
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog"
 import { Code, Laptop, Brain, Globe } from "lucide-react"
 
 interface Skill {
   category: string
-  icon: JSX.Element
+  icon: ReactElement
   description: string
   items: string[]
   details: string // Added for pop-up
